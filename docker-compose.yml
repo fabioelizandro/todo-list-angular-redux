@@ -1,0 +1,11 @@
+version: '2'
+services:
+  webapp:
+    build: ./webapp
+    command: yarn start
+    volumes:
+      - ./webapp:/home/node
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=$NODE_ENV
