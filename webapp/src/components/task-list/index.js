@@ -1,4 +1,4 @@
-import template from './index.html';
+import template from './template';
 import { selectTasks } from 'state/task/selectors';
 
 controller.$inject = ['store'];

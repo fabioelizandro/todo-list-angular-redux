@@ -1,3 +1,4 @@
+export default `
 <div>
   <span>{{$ctrl.description}}</span>
   <b>{{$ctrl.done}}</b>
@@ -10,3 +11,4 @@
     Undone
   </button>
 </div>
+`

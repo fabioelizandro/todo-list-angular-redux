@@ -1,4 +1,4 @@
-import template from './index.html';
+import template from './template';
 import { markAsDone, markAsUndone } from 'state/task/actions';
 
 controller.$inject = ['store'];

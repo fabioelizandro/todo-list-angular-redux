@@ -1,4 +1,4 @@
-import template from './index.html';
+import template from './template';
 
 export default module => {
   module.component('app', {
