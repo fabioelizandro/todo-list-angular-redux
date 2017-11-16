@@ -1,5 +1,5 @@
 import template from './index.html';
-import { markAsDone } from 'state/task/actions';
+import { markAsDone, markAsUndone } from 'state/task/actions';
 
 controller.$inject = ['store'];
 function controller(store) {
@@ -7,6 +7,10 @@ function controller(store) {
   
   $ctrl.markAsDone = (taskId) => {
     store.dispatch(markAsDone(taskId));
+  };
+
+  $ctrl.markAsUndone = (taskId) => {
+    store.dispatch(markAsUndone(taskId));
   };
 };
 

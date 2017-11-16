@@ -1,5 +1,5 @@
 import { handleActions } from 'redux-actions';
-import { markAsDone } from './actions';
+import { markAsDone, markAsUndone } from './actions';
 import itemReducer from './item-reducer';
 
 const initialState = {
@@ -9,13 +9,14 @@ const initialState = {
   ]
 };
 
-const markAsDoneReducer = (state, action) => {
+const mapToItemReducer = (state, action) => {
   return {
     ...state,
     tasks: state.tasks.map(task => itemReducer(task, action))
   };
 };
 
-export default handleActions({
-  [markAsDone]: markAsDoneReducer
-}, initialState);
+export default (handleActions({
+  [markAsDone]: mapToItemReducer,
+  [markAsUndone]: mapToItemReducer
+}, initialState));
