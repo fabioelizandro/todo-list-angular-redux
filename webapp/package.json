@@ -33,7 +33,6 @@
     "jest": "20.0.4",
     "jquery": "^3.2.1",
     "node-sass": "^4.5.3",
-    "raw-loader": "^0.5.1",
     "redux-logger": "^3.0.6",
     "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.6",

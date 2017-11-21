@@ -33,7 +33,6 @@ module.exports = {
           fallback: 'style-loader'
         })
       },
-      { test: /\.html$/, use: [{ loader: 'raw-loader' }] },
       { test: /\.(jpg|gif|png|mp4|svg)$/, use: [{ loader: 'file-loader' }] },
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, use: [{ loader: 'file-loader' }] },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, use: [{ loader: 'file-loader' }] },
